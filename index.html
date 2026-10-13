@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>移動しました｜ニュートンに落とせ！リンゴの木</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://nicemoto.github.io/the-apple-tree-of-wisdom/">
+<!-- 5秒後に自動で新しいページへ移動します。自動移動したくない場合は、次の1行を消してください -->
+<meta http-equiv="refresh" content="5;url=https://nicemoto.github.io/the-apple-tree-of-wisdom/">
+<style>
+:root{--bg:#eef3f8;--fg:#222;--card:#fff;--bd:#c5ccd8;--ac:#2f9e44}
+@media(prefers-color-scheme:dark){:root{--bg:#1c2028;--fg:#eee;--card:#2a2f3a;--bd:#454c5a;--ac:#51cf66}}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--fg);font-family:system-ui,"Hiragino Sans","Yu Gothic",sans-serif}
+.card{max-width:420px;margin:16px;padding:28px 24px;background:var(--card);border:3px solid var(--bd);border-radius:12px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.apple{font-size:48px;line-height:1}
+h1{font-size:22px;margin:12px 0 8px}
+p{margin:6px 0;line-height:1.7;font-size:15px}
+a.btn{display:inline-block;margin-top:14px;padding:12px 24px;background:var(--ac);color:#fff;font-weight:bold;text-decoration:none;border-radius:8px;border-bottom:3px solid rgba(0,0,0,.25)}
+a.btn:active{transform:translateY(2px);border-bottom-width:1px}
+small{display:block;margin-top:14px;opacity:.7;word-break:break-all}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="apple">🍎</div>
+  <h1>こちらに移動しました</h1>
+  <p>「ニュートンに落とせ！リンゴの木」は、新しいURLに引っ越しました。</p>
+  <a class="btn" href="https://nicemoto.github.io/the-apple-tree-of-wisdom/">新しいページへ</a>
+  <p id="cd">5秒後に自動で移動します。</p>
+  <small>https://nicemoto.github.io/the-apple-tree-of-wisdom/</small>
+</div>
+<script>
+// 自動移動までの秒数を表示するだけの小さな処理です
+var n=5,el=document.getElementById('cd');
+var timer=setInterval(function(){n--;if(n<=0){clearInterval(timer);el.textContent='移動しています…';return}el.textContent=n+'秒後に自動で移動します。'},1000);
+</script>
+</body>
+</html>
